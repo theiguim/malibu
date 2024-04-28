@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu Responsivo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,7 +15,13 @@
       <div class="logo">
         Logo
       </div>
-      <button class="menu-btn">Menu</button>
+
+      <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      
       <div class="menu">
         <ul>
           <li><a href="#">Home</a></li>
@@ -31,7 +38,7 @@
     <div id="mainContent">
       <h1>Malibu</h1>
       <p>"Estilo, tradição e precisão: onde cada corte conta uma história."</p>
-      <button id="agende">Agende</button>
+      <a href="https://wa.me/559999099448" target="_blank"><button id="agende">Agende</button></a>
     </div>
 
   </section>
@@ -51,7 +58,7 @@
     </div>
 
     <div id="imgAbout">
-      <img src="images/imgAbout.jpg" alt="">
+      <img src="images/profile.PNG" alt="">
     </div>
   </section>
 
@@ -60,46 +67,117 @@
 
     <div class="serviceElements">
 
-    <div class="serviceElement">
-      <h3><img src="images/icons/gold/1-fotor-bg-remover-20240427123924.png" alt="">
-        Corte</h3>
-      <p>"O corte de cabelo básico é uma escolha clássica e versátil,
-        conhecida por sua simplicidade e elegância atemporal, adequada para qualquer ocasião."</p>
-    </div>
+      <div class="serviceElement">
+        <h3><img src="images/icons/gold/1-fotor-bg-remover-20240427123924.png" alt="">
+          Corte</h3>
+        <p>"O corte de cabelo básico é uma escolha clássica e versátil,
+          conhecida por sua simplicidade e elegância atemporal, adequada para qualquer ocasião."</p>
+      </div>
 
-    <div class="serviceElement">
-      <h3><img src="images/icons/gold/2-fotor-bg-remover-20240427123827.png" alt="">
-        Corte</h3>
-      <p>"O corte de cabelo básico é uma escolha clássica e versátil,
-        conhecida por sua simplicidade e elegância atemporal, adequada para qualquer ocasião."</p>
-    </div>
+      <div class="serviceElement">
+        <h3><img src="images/icons/gold/2-fotor-bg-remover-20240427123827.png" alt="">
+          Barba</h3>
+        <p>"O corte de cabelo básico é uma escolha clássica e versátil,
+          conhecida por sua simplicidade e elegância atemporal, adequada para qualquer ocasião."</p>
+      </div>
 
-    <div class="serviceElement">
-    <h3><img src="images/icons/gold/3-fotor-bg-remover-20240427123838.png" alt="">
-      Corte</h3>
-    <p>"O corte de cabelo básico é uma escolha clássica e versátil,
-      conhecida por sua simplicidade e elegância atemporal, adequada para qualquer ocasião."</p>
-    </div>
+      <div class="serviceElement">
+        <h3><img src="images/icons/gold/3-fotor-bg-remover-20240427123838.png" alt="">
+          Completo</h3>
+        <p>"O corte de cabelo básico é uma escolha clássica e versátil,
+          conhecida por sua simplicidade e elegância atemporal, adequada para qualquer ocasião."</p>
+      </div>
 
-    <div class="serviceElement">
-    <h3><img src="images/icons/gold/4-fotor-bg-remover-20240427123850.png" alt="">
-      Corte</h3>
-    <p>"O corte de cabelo básico é uma escolha clássica e versátil,
-      conhecida por sua simplicidade e elegância atemporal, adequada para qualquer ocasião."</p>
+      <div class="serviceElement">
+        <h3><img src="images/icons/gold/4-fotor-bg-remover-20240427123850.png" alt="">
+          Sombracelha</h3>
+        <p>"O corte de cabelo básico é uma escolha clássica e versátil,
+          conhecida por sua simplicidade e elegância atemporal, adequada para qualquer ocasião."</p>
+      </div>
     </div>
-  </div>
 
   </section>
+
+
+  <section id="testemunhos">
+
+    <h2>Avaliações</h2>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-block w-100 cItem">
+            <p>"Visitei a Barbearia XYZ hoje e fiquei extremamente impressionado com o serviço.
+              O ambiente acolhedor, a atenção aos detalhes e a qualidade dos produtos foram excepcionais.
+              Saí de lá com um corte de cabelo e barba impecáveis, me sentindo revigorado. Recomendo fortemente!"</p>
+            <h6>Antônio</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 cItem">
+            <p>"Visitei a Barbearia XYZ hoje e fiquei extremamente impressionado com o serviço.
+              O ambiente acolhedor, a atenção aos detalhes e a qualidade dos produtos foram excepcionais.
+              Saí de lá com um corte de cabelo e barba impecáveis, me sentindo revigorado. Recomendo fortemente!"</p>
+            <h6>Antônio</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 cItem">
+            <p>"Visitei a Barbearia XYZ hoje e fiquei extremamente impressionado com o serviço.
+              O ambiente acolhedor, a atenção aos detalhes e a qualidade dos produtos foram excepcionais.
+              Saí de lá com um corte de cabelo e barba impecáveis, me sentindo revigorado. Recomendo fortemente!"</p>
+            <h6>Antônio</h6>
+          </div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+      </ol>
+    </div>
+
+  </section>
+
+
+<!-- 
+  <section id="galeria">
+<h2>Galeria</h2>
+
+  </section> -->
+
 
   <section id="contato">
-a
 
+    <div id="contato1">
+      <h1>LOGO</h1>
+      <div>
+        <img src="images/icons/socials/wpp.png" alt="Whatsapp">
+        <a href="https://wa.me/559999099448" target="_blank">Whatsapp</a> 
+      </div>
+      <div>
+        <img src="images/icons/socials/ig.png" alt="instagram">
+        <a href="https://www.instagram.com/malibu_barbearia/?hl=en" target="_blank">Instagram</a>
+      </div>
+      
+      <P>Av Gen Osório número 591, Tijuco</P>
+    </div>
 
+   
+
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.3410628998113!2d-44.270569824740264!3d-21.138821080538182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa1c97061d83eed%3A0x5282af761a30728b!2sMalibu%20Barbearia!5e0!3m2!1sen!2sbr!4v1714319178860!5m2!1sen!2sbr" 
+      width="175" height="100" style="border:0; border-radius: 2%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </section>
+
+
+
 
 
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -39,8 +39,8 @@ window.addEventListener('scroll', function () {
     header.style.backgroundColor = '#000'; // Altera o fundo do cabeçalho para preto ao rolar sobre a seção #about
     nav.style.backgroundColor = '#000';
   } else {
-    header.style.backgroundColor = 'rgba(0, 0, 0, 0.151)'; // Restaura o fundo transparente do cabeçalho se não estiver rolando sobre a seção #about
-    nav.style.backgroundColor = 'rgba(0, 0, 0, 0.151)';
+    header.style.backgroundColor = 'rgba(0, 0, 0, 0.486)'; // Restaura o fundo transparente do cabeçalho se não estiver rolando sobre a seção #about
+    nav.style.backgroundColor = 'rgba(0, 0, 0, 0.486)';
   }
 });
 
